@@ -1,0 +1,30 @@
+{
+  "extends": "airbnb-base",
+
+  "globals": {
+    "$": true,
+    "jQuery": true,
+    "Modernizr": true,
+    "window": true,
+  },
+
+  "env": {
+    "browser": true,
+  },
+
+  "rules": {
+    "no-param-reassign": 0,
+    "no-plusplus": 0,
+    "no-unused-vars": 0,
+    "no-mixed-operators": 0,
+    "max-len": 0,
+    "indent": 0,
+    "import/prefer-default-export": 0
+  },
+
+  "parserOptions": {
+      "ecmaFeatures": {
+        experimentalObjectRestSpread: true,
+      }
+    }
+}

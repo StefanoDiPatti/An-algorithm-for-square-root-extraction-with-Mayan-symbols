@@ -1,0 +1,133 @@
+$icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+
+@import "bootstrap-sass/assets/stylesheets/_bootstrap";
+
+body {
+    font-family: 'Helvetica Neue', Helvetica;
+
+    background: url('../images/background/background.png');
+    background-size: 100% 100%;
+    background-color: #a9a9a9;
+    // cursor: url('../images/zero.cur'), auto;
+}
+
+main {  
+    min-height: 90vh;
+}
+
+a {
+    text-shadow: -1px -1px .5px #000, 
+                 1px 1px .5px #000;
+
+    color: #40cfcf;
+    font-weight: bold;
+}
+
+a:hover { 
+    @extend a; 
+}
+
+#footer {
+    min-height: 5vh;
+    margin-bottom: 0px;
+}
+
+#grid_canvas {
+    // border: .1em black solid;
+    box-shadow: 0px 0px .5em #ffffff,
+                0px 0px .5em #ffffff,
+                0px 0px 2em #a9a9a9;
+}
+
+.navbar {
+    background-color: rgba(240, 240, 240, 0.8);
+
+    font-weight: bold;
+    a {
+        text-shadow: -1px -1px 2px #000, 
+                     1px 1px 2px #000;
+
+        color: #40efef;
+    }
+}
+
+.navbar-text {
+    color: #444444;
+
+    // text-shadow: -1px -1px 1px #000000, 1px 1px 1px #000000, 
+}
+
+.navbar-brand {
+    @extend .navbar-text;
+
+    margin: 0em;
+}
+
+.intro {
+    font-family: 'Helvetica Neue', Helvetica;
+    text-align: center;
+    
+    h1,
+    h2,
+    p {
+        color: rgb(10, 10, 10);
+    }
+}
+
+.input-form {
+    margin-bottom: 2.5vh;
+}
+
+.operations-form {
+    margin-top: 2.5vh;
+    margin-bottom: 1vh;
+}
+
+.canvas-container {
+    margin-top: 2.5vh;
+    text-align: center;
+}
+
+.help-container {
+    color: white;
+    text-shadow: -1px -1px 2px #000000, 
+                 1px 1px 2px #000000, 
+}
+
+.error-text {
+    display: block;
+    margin-bottom: 1em;
+
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 2px #000000,
+                 0px 0px 2px #000000,
+                 -1px -1px 1px #FF0000, 
+                 -1px 1px 1px #FF0000, 
+                 1px -1px 1px #FF0000, 
+                 1px 1px 1px #FF0000, 
+}
+
+.info-text {
+    display: block;
+    margin: 1em;
+
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: -1px -1px 2px #000000, 
+                 1px 1px 2px #000000, 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding:0 2px;
+}
+
+.column {
+    flex: 25%;
+    padding:0 2px;
+}
+

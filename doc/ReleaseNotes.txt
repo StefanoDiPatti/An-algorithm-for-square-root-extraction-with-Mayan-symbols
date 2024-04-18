@@ -1,0 +1,40 @@
+﻿Note di rilascio del simulatore Simulatore di radice quadrata in Abaco Maya, versione 2.0 
+
+Una versione inglese e ulteriori informazioni sono contenute nella sezione 'Development'
+dell'interfaccia del simulatore.
+
+Architettura del software e tecniche di programmazione 
+
+    Il progetto usa il generatore Yeoman 'generator-lb' fornito da Lighting Beetle ed è sviluppato con tutti i relativi tools inclusi in esso.
+    Il codice HTML è astratto utilizzando PugJS.
+    L'abaco maya è renderizzato utilizzando i canvas HTML5.
+    Il codice javascript è suddiviso in moduli, ognuno con funzionalità specifiche. Essi comunicano esclusivamente
+    attraverso gli export così che valori e funzioni che dovrebbero rimanere 'private' sono inaccessibili ai
+    moduli esterni.
+
+    I nominativi dei moduli e le relative funzionalità sono:
+    calculus.js - Calcolo della radice quadrata e generazioni dei relativi passi per il successivo rendering.
+    canvas.js - Funzioni ausiliarie per riordinare e semplificare il codice di scrittura dei pixel sul canvas HTML5.
+    graphic_engine.js - Effettivo rendering sull'abaco dei vari passi durante il calcolo della radice quadrata
+    exercise_listener.js - Funzioni per la gestione dell'inserimento e la rimozione degli elementi nell'abaco nella modalità esercitazione
+    graphic_utils.js - Funzioni ausiliarie per graphic_engine.js
+    utils.js - Funzioni ausiliarie generali
+
+Collaudi 
+
+    Un qualsiasi browser in grado di eseguire un canvas HTML5 è sufficiente a testare il programma. È 
+    consigliato il testing su quanti più browser e dispositivi possibili oltre che il rispetto degli standard per
+    evitare problemi di portabilità.
+
+Idee per ulteriori sviluppi 
+
+    - Migliorare il rendering, assicurando che a ogni schermata si visualizzino i contenuti attesi in tutte le caselle dell'abaco (talvolta la visualizzazione è 
+	temporaneamente parziale nella versione attuale, per un problema aleatorio irrisolto).
+	
+    - Migliorare il design e la reattività mobile, che per ragioni di tempo non è stata ancora totalmente collaudata.
+    
+    - Migliorare il design del codice.
+
+    - Migliorare l'interazione del programma con l'utente per facilitare la procedura del calcolo in modalità esercitazione.
+	
+	

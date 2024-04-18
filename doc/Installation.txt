@@ -1,0 +1,21 @@
+﻿Note di installazione del Simulatore di radice quadrata in Abaco Maya, versione 2.0 
+
+Requisiti di sistema 
+
+    Il simulatore è sviluppato in HTML5 e Javascript, per cui qualsiasi sistema operativo e browser
+    in grado di supportare queste tecnologie è sufficiente alla sua esecuzione.
+
+Compilazione e installazione  
+
+    In caso si voglia compilare il progetto, generando un pacchetto di distribuzione, è necessario
+    seguire le istruzioni contenute nel repository su GitHub del template 'generator-lb' fornito da Lighting Beetle, usato
+    per la generazione dello scheletro del progetto e il cui collegamento è riportato nella sezione
+    'Development' (link in alto a destra) della pagina del simulatore e nelle note di rilascio. Non è necessaria alcuna installazione, basta collegarsi
+    all'index del sito web generato.
+
+Esecuzione 
+
+   Per eseguire il simulatore basta collegarsi al sito web in cui è ospitato il progetto.
+   Per l'esecuzione in locale aprire col browser radicemaya20-bin/bin/simulatore.html oppure cliccare 
+   l'apposito link 'Avvia il Simulatore' nella pagina radicemaya20-bin/index.html .
+ 
