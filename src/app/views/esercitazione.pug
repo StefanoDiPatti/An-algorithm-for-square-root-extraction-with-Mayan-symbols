@@ -1,0 +1,42 @@
+extends layouts/_default
+
+block content
+    .container
+        // h1 AE2017 UNICT RadiceMaya 
+        // - IL FORMALIZZATORE PAZZO È STATO ANCHE QUI.
+    .container.canvas-container
+        span(id='error_text' class='error-text')
+        .input-form
+            input(id='input_textfield' type='text' value='1000000')
+            input(id='input_button_ex' type='button' value='Calcola')
+
+            input(id='check_1' type='button' value='Check Radicando')
+            
+            input(id='check_2' type='button' value='Check Sottraendo')
+
+        .row
+            .column
+                canvas(id='grid_canvas') If you see this,your browser is not supporting HTML5 Canvas.
+        
+        // .topright
+                img.Images#wrongrad(src="./images/wrong.png", style="width:60px;height:60px;" alt="" class = 'hidden')
+                img.Images#rightrad(src="./images/right.png", style="width:60px;height:60px;" alt="")
+        // .centerright
+                img.Images#rightsot(src="./images/right.png", style="width:60px;height:60px;" alt="" class = 'hidden')
+                img.Images#wrongsot(src="./images/wrong.png", style="width:60px;height:60px;" alt="")
+        
+        .row
+            .column
+                img.Images#rock(src="./images/0.png" style="width:80px;height:80px;" alt="")
+            .column
+                img.Images#mais(src="./images/1.png" style="width:80px;height:80px;" alt="")
+            .column
+                img.Images#wood(src="./images/5.png" style="width:80px;height:80px;" alt="")
+            .column
+                img.Images#rubber(src="./images/rubber.png" style="width:80px;height:80px;margin-top:5px" alt="")
+
+     
+        .operations-form
+        span(id='info_text' class='info-text') Benvenuto nella modalit&agrave; esercitazione del simulatore di radice quadrata su abaco maya!
+
+        input(id='help_button' type='button' value=' ? ' style="margin-bottom:20px")
