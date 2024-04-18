@@ -1,6 +1,6 @@
 # AE2017 UNICT RadiceMaya
 
->  For more information, refer to the /doc folder where you will find information on how to install and use the application
+>  For more information, refer to the /doc folder where you will find information on how to install and use the application. Here you can find the uploaded version: https://www.dmi.unict.it/archelab/projects/ae2017unictradicemaya/index.html
 
 ## How to install
 
